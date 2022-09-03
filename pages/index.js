@@ -15,6 +15,7 @@ export default function Home() {
         <p className="description">
           Versus bot is the shit
         </p>
+        <script type="text/javascript" src="js/jquery.js"></script>
       </main>
 
       <Footer />
