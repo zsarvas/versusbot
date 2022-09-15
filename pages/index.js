@@ -15,6 +15,8 @@ export default function Home() {
         <p className="description">
           Versus bot is the shit
         </p>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+        <script src="components/db.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
       </main>
 
