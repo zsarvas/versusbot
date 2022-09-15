@@ -11,7 +11,6 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
 // Make a request
 const { data: rocketleague, error } = await supabase.from('rocketleague').select('*')
-console.log(rocketleague)
 
 
 export default function Home() {
@@ -27,7 +26,6 @@ export default function Home() {
         <p className="description">
           rocketleague
         </p>
-        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
       </main>
 
