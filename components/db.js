@@ -3,7 +3,9 @@ const SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm
 
 // Initialize the JS client
 import { createClient } from '@supabase/supabase-js'
+import { data } from 'cypress/types/jquery'
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
 // Make a request
 const { data: rocketleague, error } = await supabase.from('rocketleague').select('*')
+console.log(rocketleague)
