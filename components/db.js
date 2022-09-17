@@ -5,7 +5,7 @@ const supabase = createClient("https://zywthnmeikffxbzusxkb.supabase.co", "eyJhb
 // Make a request
 const { data: rocketleague, error } = await supabase.from('rocketleague').select('*')
 
-function tableCreate() {
+function TableCreate() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
     tbl.style.width = '100%';
@@ -28,4 +28,4 @@ function tableCreate() {
     tbl.appendChild(tbdy);
     body.appendChild(tbl)
   }
-  tableCreate();
+  TableCreate();
