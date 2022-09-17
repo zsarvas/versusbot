@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import TableCreate from '@components/db'
 
 
 export default function Home() {
@@ -18,29 +19,12 @@ export default function Home() {
 
 <h2>A basic HTML table</h2>
 
-<table style="width:100%">
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table>
-
 </body>
         <p className="description">
           Versus bot is the shit
+          <TableCreate />
         </p>
-        <script type="text/javascript" src="component/db.js"></script>
+        
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
       </main>
