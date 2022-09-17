@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import TableCreate from '@components/db'
 
 
 export default function Home() {
@@ -15,16 +14,25 @@ export default function Home() {
 
       <main>
         <Header title="Welcome to the Versus Bot Leaderboard!" />
-<body>
-
-<h2>A basic HTML table</h2>
-
-</body>
+        <body>
+      <table border = "1">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+      </table>
+      
+   </body>
         <p className="description">
           Versus bot is the shit
           
         </p>
-        <TableCreate />
+        
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
       </main>
