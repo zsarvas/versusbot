@@ -22,9 +22,9 @@ export default function Home() {
 </body>
         <p className="description">
           Versus bot is the shit
-          <TableCreate />
+          
         </p>
-        
+        <TableCreate />
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
       </main>
