@@ -15,17 +15,26 @@ export default function Home() {
       <main>
         <Header title="Welcome to the Versus Bot Leaderboard!" />
         <body>
-      <table border = "1">
-         <tr>
-            <td>Row 1, Column 1</td>
-            <td>Row 1, Column 2</td>
-         </tr>
-         
-         <tr>
-            <td>Row 2, Column 1</td>
-            <td>Row 2, Column 2</td>
-         </tr>
-      </table>
+        <table>
+  <tr>
+    <th>Name</th>
+    <th>MMR</th>
+    <th>Wins</th>
+    <th>Losses</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>1000</td>
+    <td>0</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>1040</td>
+    <td>4</td>
+    <td>0</td>
+  </tr>
+</table> 
       
    </body>
         <p className="description">
