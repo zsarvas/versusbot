@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import dbCall from '@components/db'
+
 
 
 export default function Home() {
@@ -15,10 +15,9 @@ export default function Home() {
 
       <main>
         <Header title="Versus Bot Leaderboard" />
-        <dbCall></dbCall>
-        <body>
         
-      
+        <body>
+        <script type = "text/javascript" src="components/db.js"></script> 
    </body>
         <p className="description">
         </p>
@@ -26,7 +25,6 @@ export default function Home() {
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
         
       </main>
-
       <Footer />
     </div>
   )

@@ -5,9 +5,9 @@ require('dotenv').config()
 const envVariables = process.env;
 
 // Read vars from envVariables object
-const {
-    SUPABASE_URL,
-    SUPABASE_KEY
+    const {
+        SUPABASE_URL,
+        SUPABASE_KEY
 } = envVariables;
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
@@ -28,7 +28,7 @@ const content = `<table>
   <th>Win Percentage</th>
 </tr>
 <tr>
-  <td>${"Steven sondheim"}</td>
+  <td>"Steven sondheim"</td>
   <td>1000</td>
   <td>0</td>
   <td>4</td>
