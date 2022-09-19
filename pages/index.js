@@ -10,6 +10,7 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
+        <script type="text/javascript" src="/components/db.js"></script>
       </Head>
 
       <main>
@@ -22,7 +23,7 @@ export default function Home() {
         </p>
         
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-        <script type="text/javascript" src="db.js"></script>
+        
       </main>
 
       <Footer />
