@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import dbCall from '@components/db'
 
 
 export default function Home() {
@@ -10,11 +11,11 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
-        <script type="text/javascript" src="/components/db.js"></script>
       </Head>
 
       <main>
         <Header title="Versus Bot Leaderboard" />
+        <dbCall></dbCall>
         <body>
         
       
