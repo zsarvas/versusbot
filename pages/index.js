@@ -18,7 +18,7 @@ export default function Home() {
         <Header title="Versus Bot Leaderboard" />
         <script type = "text/javascript" src="db.js"></script> 
         <body>
-          "${dataString}"
+          "${dataString()}"
         
    </body>
         <p className="description">
