@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Versus Bot Leaderboard!" />
+        <Header title="Versus Bot Leaderboard" />
         <body>
         <table>
           <tr>
@@ -21,11 +21,15 @@ export default function Home() {
             <th>MMR</th>
             <th>Wins</th>
             <th>Losses</th>
+            <th>+/-</th>
+            <th>Win Percentage</th>
          </tr>
          <tr>
             <td>Alfreds Futterkiste</td>
             <td>1000</td>
             <td>0</td>
+            <td>4</td>
+            <td>4</td>
             <td>4</td>
           </tr>
          <tr>
@@ -33,12 +37,14 @@ export default function Home() {
             <td>1040</td>
             <td>4</td>
             <td>0</td>
+            <td>0</td>
+            <td>0</td>
           </tr>
         </table> 
       
    </body>
         <p className="description">
-          Versus bot is the shit
+          Powered by Versus Bot
           
         </p>
         
