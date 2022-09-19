@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import dataString from './db'
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Header title="Versus Bot Leaderboard" />
         <script type = "text/javascript" src="db.js"></script> 
         <body>
+          "${dataString}"
         
    </body>
         <p className="description">
