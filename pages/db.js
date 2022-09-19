@@ -15,11 +15,5 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 const { data: rocketleague, error } = await supabase.from('rocketleague').select('*')
 
 
-console.log(rocketleague)
-
-export default function dataString(){
-  return {rocketleague}
-}
-
 
 
