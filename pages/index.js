@@ -17,7 +17,7 @@ export default function Home() {
         <Header title="Versus Bot Leaderboard" />
         
         <body>
-        <script type = "text/javascript" src="C:\Users\zachs\OneDrive\Desktop\projects\versusbot\components\db.js"></script> 
+        <script type = "text/javascript" src="db.js"></script> 
    </body>
         <p className="description">
         </p>
