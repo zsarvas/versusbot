@@ -22,7 +22,7 @@ export default function Home() {
         </p>
         
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="components/db.js"></script>
       </main>
 
       <Footer />
