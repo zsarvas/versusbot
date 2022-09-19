@@ -16,7 +16,7 @@ export default function Home() {
 
       <main>
         <Header title="Versus Bot Leaderboard" />
-        <script type = "text/javascript" src="db.js"></script> 
+        
         <body>
           
         

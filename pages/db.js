@@ -13,7 +13,3 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 // Make a request
 const { data: rocketleague, error } = await supabase.from('rocketleague').select('*')
-
-
-
-
