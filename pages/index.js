@@ -22,7 +22,7 @@ export default function Home() {
         </p>
         
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-        <script type="text/javascript" src="components/db.js"></script>
+        <script type="text/javascript" src="https://raw.githubusercontent.com/zsarvas/versusbot/main/components/db.js"></script>
       </main>
 
       <Footer />

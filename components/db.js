@@ -17,6 +17,7 @@ const { data: rocketleague, error } = await supabase.from('rocketleague').select
 
 console.log(rocketleague)
 
+
 const content = `<table>
 <tr>
   <th>Name</th>
@@ -44,4 +45,4 @@ const content = `<table>
 </tr>
 </table> `
 
-document.body = content
+document.body.innerHTML = content
