@@ -24,6 +24,5 @@ for (var l in rocketleague) {
       '</tr>';
 }
 html += '</table>';
-console.table(rocketleague)
-return (JSON.stringify(html))
 }
+infoCall()
