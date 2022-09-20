@@ -29,7 +29,7 @@ export default function Home() {
   </thead>
   <tbody></tbody>
 </table>
-          <script type = "text/javascript" src = "./db.js"></script>
+          <script type = "text/javascript" src = "db.js"></script>
           
         </body>
         <p className="description">
