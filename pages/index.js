@@ -2,8 +2,12 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import { createClient } from '@supabase/supabase-js'
+import React, { useState, useEffect } from 'react'; 
 
-export default function Home({props}) { 
+export default function Home(props) { 
+  useEffect(() => {  
+       document.querySelector('#players-table tbody').innerHTML = props.table; 
+       });
   return (
     <div className="container">
       <Head>
@@ -28,7 +32,6 @@ export default function Home({props}) {
   </thead>
   <tbody></tbody>
 </table>
-          
         </body>
         <p className="description">
           Versus Bot 
@@ -43,7 +46,6 @@ export default function Home({props}) {
 export async function getStaticProps() {
   const supabase = createClient("https://zywthnmeikffxbzusxkb.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5d3Robm1laWtmZnhienVzeGtiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjI2NzIxODYsImV4cCI6MTk3ODI0ODE4Nn0.g8Nam0FhgnGb2-NFH3eGLc-GvUBuXBfE2RwtutKh6Zo")
   
-  //export default async function infoCall(){
     
   // Make a request
   let { data: rocketleague, error } = await supabase.from('rocketleague').select('*').order('MMR', {ascending: false})
@@ -79,12 +81,9 @@ export async function getStaticProps() {
     tableStr +='</tr>';
    })
   
-   // insert the string as the html of the tbody
-   
    return {
     props: {
-      info: tableStr}
+      info: rocketleague,
+    table: tableStr}
    };
-  //}
-  //infoCall(
 }
