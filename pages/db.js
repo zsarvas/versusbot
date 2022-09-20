@@ -24,5 +24,7 @@ for (var l in rocketleague) {
       '</tr>';
 }
 html += '</table>';
+
+document.body.innerHTML = html
 }
 infoCall()
