@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import infoCall from './db'
 
 export default function Home() { 
+  infoCall()
   return (
     <div className="container">
       <Head>
@@ -11,15 +13,27 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Versus Bot Leaderboard" />
+        <Header title="4 Man's Leaderboard" />
         <body>
-          <div id = "table"></div>
+        <table id="players-table" >
+  <thead>
+    <tr>
+    <th>Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>MMR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>Wins&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>Losses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>+/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>Percentage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
           <script type = "text/javascript" src = "./db.js"></script>
           
-       Hello everyon
         </body>
         <p className="description">
-          helloo
+          Versus Bot 
         </p>
         
       </main>
