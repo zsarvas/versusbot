@@ -18,14 +18,15 @@ rocketleague.forEach(function(rocketleague, index){
   const {id: id, Name: name, MMR: mmr, Wins: wins, Losses: losses, MatchUID: matchuid} = rocketleague;
 
   var differential = wins - losses;
-  var numerator = wins
   var divisor = losses
   var percentage = 100 * parseFloat(wins/divisor)
   if (divisor == 0){
     percentage = 100.00
   }
   if (wins == 0 && losses == 0) {
-   percentage = 0.00
+   percentage =   NaN
+   differential = NaN
+   mmr =  NaN
   }
   
   // build the string with the contents of the iterated row data
@@ -39,8 +40,8 @@ rocketleague.forEach(function(rocketleague, index){
    tableStr +='<td>' + percentage.toFixed(2) + '%</td>';
   tableStr +='</tr>';
  })
- 
+
  // insert the string as the html of the tbody
- document.querySelector('#players-table tbody').innerHTML = tableStr;
+ document.querySelector('#players-table tbody').innerHTML = tableStr
 }
 infoCall()
