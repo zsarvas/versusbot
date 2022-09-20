@@ -24,9 +24,6 @@ for (var l in rocketleague) {
       '</tr>';
 }
 html += '</table>';
-
-document.body.innerHTML = html
-
 console.table(rocketleague)
+return (JSON.stringify(html))
 }
-infoCall()

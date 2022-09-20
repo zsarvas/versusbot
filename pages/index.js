@@ -4,7 +4,6 @@ import infoCall from './db'
 import Footer from '@components/Footer'
 
 export default function Home() { 
-  
   return (
     <div className="container">
       <Head>
@@ -15,11 +14,10 @@ export default function Home() {
       <main>
         <Header title="Versus Bot Leaderboard" />
         <body>
-          <div id = "table"></div>
-          
-   </body>
+       
+        </body>
         <p className="description">
-          hello
+          helloo
         </p>
         
         
